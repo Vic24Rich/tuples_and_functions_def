@@ -1,0 +1,196 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyM5UaiPSY2in1Q+3emJHCLe",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Vic24Rich/tuples_and_functions_def/blob/main/class8.py\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 14,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "BArlRI27u_YX",
+        "outputId": "7be21d2d-a4ed-4a60-f12e-b889afe660f2"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "('laranja', 'uva', 'goiaba', 'jaca', 'jambu')\n",
+            " \n",
+            "goiaba\n"
+          ]
+        }
+      ],
+      "source": [
+        "# 1 -  Crie uma tupla chamada frutas com pelo menos 5 frutas diferentes. Em seguida, acesse e imprima o terceiro elemento da tupla.\n",
+        "frutas = ('laranja', 'uva', 'goiaba', 'jaca', 'jambu')\n",
+        "\n",
+        "print(frutas)\n",
+        "print(\" \")\n",
+        "# for n in frutas:\n",
+        "print(frutas[2])"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# 2 - Crie uma tupla chamada numeros com alguns números inteiros. Em seguida, converta essa tupla em uma lista e imprima a lista resultante.\n",
+        "numbers = (1,2,3,3,4,5)\n",
+        "lizt = list(numbers)\n",
+        "\n",
+        "print(lizt)\n",
+        "print(\" \")\n",
+        "# for n in lizt:\n",
+        "#   print(n)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "2iOzozVAzBPa",
+        "outputId": "317114ec-c19b-496e-d7b2-221c192d683e"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[1, 2, 3, 3, 4, 5]\n",
+            " \n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# 3 - Crie uma tupla chamada `meses` com os nomes dos meses do ano até Setembro. Use um loop `for` para imprimir cada mês em uma linha separada.\n",
+        "meses = (\"Janeiro\",\"Fevereiro\",\"Março\",\"Abril\",'Maio','Junho','Julho','Agosto',\"Setembro\")\n",
+        "\n",
+        "print(meses)\n",
+        "print(\" \")\n",
+        "for n in meses:\n",
+        "  print(n)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "jUeapU8wzIax",
+        "outputId": "86631563-3f20-4026-e92f-0111166d31c2"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "('Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro')\n",
+            " \n",
+            "Janeiro\n",
+            "Fevereiro\n",
+            "Março\n",
+            "Abril\n",
+            "Maio\n",
+            "Junho\n",
+            "Julho\n",
+            "Agosto\n",
+            "Setembro\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# 4 - Crie uma lista chamada notas com algumas notas de alunos. Em seguida, converta essa lista em uma tupla e imprima a tupla resultante.\n",
+        "lizt2 = [5,5.5,6.7,9.5,10]\n",
+        "tupla = tuple(lizt2)\n",
+        "\n",
+        "print(tupla)\n",
+        "print(\" \")\n",
+        "for n in tupla:\n",
+        "  print(n)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "vEBYVThuzITx",
+        "outputId": "9570a3bb-9159-497d-949b-c9379813a125"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "(5, 5.5, 6.7, 9.5, 10)\n",
+            " \n",
+            "5\n",
+            "5.5\n",
+            "6.7\n",
+            "9.5\n",
+            "10\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# 5 - Crie uma lista chamada `ponto` que represente as coordenadas (x, y) de um ponto. Em seguida, desempacote os elementos da lista em duas variáveis separadas (x e y) e imprima os valores.\n",
+        "point = [3.141592653584626,4.33832479]\n",
+        "x,y = point\n",
+        "\n",
+        "print(x)\n",
+        "print(y)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Mp_QkUO2zH6o",
+        "outputId": "0f39e6b8-6897-4ab0-9e27-76e899114fc1"
+      },
+      "execution_count": 15,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "3.141592653584626\n",
+            "4.33832479\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
